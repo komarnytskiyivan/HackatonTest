@@ -1,0 +1,40 @@
+.home__hero-section{
+    color: #fff;
+    padding:  90px 0;
+}
+.home__hero-topline{
+    margin-bottom: 60px;
+}
+.darkBg{
+    background: linear-gradient(360deg, #1E3C72 0%, #3065C0 100%);
+}
+.home__hero-bottombutton{
+    padding: 18px 18px;
+    color:  #FFFFFF;
+    font-weight: bold;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background: linear-gradient(360deg, #1E3C72 0%, #3065C0 100%);
+    width: 275px;
+    height: 50px;
+}
+.home__hero-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media screen and (max-width: 768px){
+    .container{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .home__hero-text-wrapper{
+        padding-bottom: 65px;
+    }
+    .col{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}

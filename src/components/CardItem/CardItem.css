@@ -1,0 +1,30 @@
+.home__hero-card{
+    width: 280px;
+    height: 580px;
+    background: #4A76C4;
+    box-shadow: 10.1221px 16.4484px 31.6315px rgba(0, 0, 0, 0.3), inset 5.06103px 5.06103px 17.7136px rgba(255, 255, 255, 0.15);
+    border-radius: 25.3052px;
+    margin-right: 75.96px;
+    margin-bottom: 80px;
+}
+.home__hero-card h1{
+    font-weight: bold;
+}
+.home__hero-card .img-main{
+    margin-top: 30px;
+}
+.card-button{
+    background: linear-gradient(0deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
+    border-radius: 12.6526px;
+    display: inline-block;
+    padding: 15px 32px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    align-items: center;
+}
+.card-button{
+    background:linear-gradient(90deg, #1E3C72 0%, #1E3C72 1%, #2A5298 100%);
+}
