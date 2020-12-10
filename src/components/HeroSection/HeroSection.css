@@ -17,11 +17,22 @@
     background: linear-gradient(360deg, #1E3C72 0%, #3065C0 100%);
     width: 275px;
     height: 50px;
+    margin-top: 10px;
 }
 .home__hero-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.location-button{
+    color:  #FFFFFF;
+    font-weight: bold;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background: linear-gradient(360deg, #1E3C72 0%, #3065C0 100%);
+    width: 275px;
+    height: 50px;
+    margin-top: 10px;
 }
 @media screen and (max-width: 768px){
     .container{

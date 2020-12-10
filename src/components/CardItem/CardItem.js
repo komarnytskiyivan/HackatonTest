@@ -8,6 +8,7 @@ function CardItem (props) {
             <h4>{props.date}</h4>
             <p>Час UTC:{props.time}</p>
             <p>Тривалість:{props.length}</p>
+            <p>Хмарність:{props.cloud}</p>
         </div>
     )
 }

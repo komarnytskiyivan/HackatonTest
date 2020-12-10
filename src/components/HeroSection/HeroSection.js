@@ -9,9 +9,7 @@ export default function HeroSection() {
     fetchData();
   }, []);
   function ChangeCity(){
-      console.log(inputRef)
-            setLocationCity(inputRef.current.value)
-            fetchData(locationCityState);
+            fetchData(inputRef.current.value);
         }
   const fetchData = async (locationCity = 'Lviv') => {
     try {
@@ -20,7 +18,7 @@ export default function HeroSection() {
       );
       const data = await response.json();
       setEvents(data);
-      console.log(data)
+      setLocationCity(locationCity);
     } catch (error) {
       console.log(error.message);
     }
@@ -40,6 +38,7 @@ export default function HeroSection() {
                         date={(datumn.date_start).slice(0,10)}
                         time={(datumn.date_start).slice(11,19)}
                         length={datumn.duration}
+                        cloud={datumn.cloud == null ? "Немає хмарності" : datumn.cloud}
                         />
                     );
                 })}
@@ -48,8 +47,9 @@ export default function HeroSection() {
                     <img src="./assets/svg/Vector2.svg" alt="Calendar"/>
                     &nbsp;Ваше місцезнаходження: <span className="location">{locationCityState}</span>
                 </h3>
-                <input onChange={ChangeCity} ref={inputRef} className="home__hero-bottombutton">
+                <input ref={inputRef} className="home__hero-bottombutton">
                 </input>
+                <button onClick={ChangeCity} className="location-button" type="submit">Подивитись івенти!</button>
             </div>
         </div>
     )
